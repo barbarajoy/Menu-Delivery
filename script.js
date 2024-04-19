@@ -45,13 +45,42 @@ function addToCart(name, price){
   if(existingItem){
     //Se o item já existe, vamos alterar a quantidade
     existingItem.quantity += 1;
-    return;
+  } else {
+    cart.push({
+      name,
+      price,
+      quantity: 1,
+    })
   }
 
-  cart.push({
-    name,
-    price,
-    quantity: 1,
-  })
+  updateCartModal()
 
+}
+
+//Atualizar carrinho
+function updateCartModal(){
+  cartItemsContainer.innerHTML = "";
+  let total = 0;
+
+  cart.forEach(item => {
+    const cartItemElement = document.createElement("div");
+    cartItemElement.classList.add("flex", "justify-between", "mb-4", "flex-col")
+
+    cartItemElement.innerHTML = `
+      <div class="flex items-center justify-between">
+        <div>
+          <p class="font-medium">${item.name}</p>
+          <p>Qtd: ${item.quantity}</p>
+          <p class="font-medium mt-2">R$ ${item.price}</p>
+        </div>
+          <button>
+            Remover
+          </button>
+
+      </div>
+    `
+
+    cartItemsContainer.appendChild(cartItemElement);
+
+  })
 }
