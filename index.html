@@ -37,10 +37,10 @@
   </h2>
 
   <div id="menu">
-    <main>
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7x1 px-3 mb-16">
 
       <!--INICIO PRODUTO-->
-      <div>
+      <div class="flex gap-2">
         <img
           src="./assets/hamb-1.png"
           alt="Hamburger Smash"
@@ -51,9 +51,13 @@
           <p class="font-bold">Hamburger Smash</p>
           <p class="text-sm">Pão de fermentação natural, burger 160g, queijo prato e maionese da casa.</p>
 
-          <div>
-            <p>R$18,90</p>
-            <button class="bg-gray-900 px-5 rounded">
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$18,90</p>
+            <button
+              class="bg-gray-900 px-5 rounded add-to-cart-button"
+              data-name="Hamburger Smash"
+              data-price="18.90"
+            >
               <i class="fa-solid fa-cart-shopping text-lg text-white"></i>
             </button>
           </div>
@@ -63,7 +67,161 @@
       </div>
       <!--FIM PRODUTO-->
 
+      <!--INICIO PRODUTO-->
+      <div class="flex gap-2">
+        <img
+          src="./assets/hamb-2.png"
+          alt="Hamburger Duplo"
+          class="w-32 h-32 rounded hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div>
+          <p class="font-bold">Hamburger Duplo</p>
+          <p class="text-sm">Pão de fermentação natural, burger 160g, queijo prato e maionese da casa.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$32,90</p>
+            <button
+              class="bg-gray-900 px-5 rounded add-to-cart-button"
+              data-name="Hamburger Duplo"
+              data-price="32.90"
+            >
+              <i class="fa-solid fa-cart-shopping text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <!--FIM PRODUTO-->
+
+      <!--INICIO PRODUTO-->
+      <div class="flex gap-2">
+        <img
+          src="./assets/hamb-3.png"
+          alt="Hamburger Salad"
+          class="w-32 h-32 rounded hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div>
+          <p class="font-bold">Hamburger Salad</p>
+          <p class="text-sm">Pão de fermentação natural, burger 160g, queijo prato e maionese da casa.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$30,90</p>
+            <button
+              class="bg-gray-900 px-5 rounded add-to-cart-button"
+              data-name="Hamburger Salad"
+              data-price="30.90"
+            >
+              <i class="fa-solid fa-cart-shopping text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <!--FIM PRODUTO-->
+
+      <!--INICIO PRODUTO-->
+      <div class="flex gap-2">
+        <img
+          src="./assets/hamb-4.png"
+          alt="Hamburger da Casa"
+          class="w-32 h-32 rounded hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div>
+          <p class="font-bold">Hamburger da Casa</p>
+          <p class="text-sm">Pão de fermentação natural, burger 160g, queijo prato e maionese da casa.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$36,90</p>
+            <button
+              class="bg-gray-900 px-5 rounded add-to-cart-button"
+              data-name="Hamburger da Casa"
+              data-price="36.90"
+            >
+              <i class="fa-solid fa-cart-shopping text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <!--FIM PRODUTO-->
+
+
+
     </main>
+
+    <div class="mx-auto max-w-7x1 px-2 my-2">
+      <h2 class="font-bold text-3xl">
+        Bebidas
+      </h2>
+    </div>
+
+    <!--GRID BEBIDAS-->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7x1 px-3 mb-16" id="menu">
+
+
+      <!--BEBIDA ITEM-->
+      <div class="flex gap-2 w-full">
+        <img
+          src="./assets/refri-1.png"
+          alt="Coca Lata"
+          class="w-32 h-32 rounded hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div class="w-full">
+          <p class="font-bold">Coca Lata</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$6,90</p>
+            <button
+              class="bg-gray-900 px-5 rounded add-to-cart-button"
+              data-name="Coca Lata"
+              data-price="6.90"
+            >
+              <i class="fa-solid fa-cart-shopping text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <!--FIM BEBIDA ITEM-->
+
+      <!--BEBIDA ITEM-->
+      <div class="flex gap-2 w-full">
+        <img
+          src="./assets/refri-2.png"
+          alt="Guaraná Lata"
+          class="w-32 h-32 rounded hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div class="w-full">
+          <p class="font-bold">Guaraná Lata</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$6,90</p>
+            <button
+              class="bg-gray-900 px-5 rounded add-to-cart-button"
+              data-name="Guaraná Lata"
+              data-price="6.90"
+            >
+              <i class="fa-solid fa-cart-shopping text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <!--FIM BEBIDA ITEM-->
+
+    </div>
+    <!--FIM GRID BEBIDAS-->
+
   </div>
 
 </body>
